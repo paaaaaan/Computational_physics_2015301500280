@@ -21,6 +21,6 @@ while 1:
   screen.blit(ball, ballrect)
   pygame.display.flip()
 
-  ![1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/picture1.png)
-  ![2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/picture2.png)
+  ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/picture1.png)
+  ![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/picture2.png)
   参考源代码http://www.cnblogs.com/hongten/p/hongten_pygame_bouncing_ball.html
