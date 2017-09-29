@@ -9,3 +9,6 @@
 
 
 - [x] [exercise03: compute the solution to the equation](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/exercise03.py)
+
+
+- [x] [exercise04: ]
