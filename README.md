@@ -10,11 +10,7 @@
  
 # 数据图像
 
-
-
-
-
-
+![figure](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/4.0/Figure_1.png)
 
 ## 源代码
 import numpy as np
