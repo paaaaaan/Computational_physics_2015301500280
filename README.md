@@ -14,7 +14,7 @@
 ### 当角速度为2000rpm时，y、z随x变化曲线；
 ![picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/master/picture7.png)
 # 结论
-  ### 由三组不同角速度情况下，y、z随x变化图像可知，当角速度越来越大时，z的变化越来越明显。即上下两部分的向心力之差越来越大，导致z变化加快，与实际相符合。
+### 由三组不同角速度情况下，y、z随x变化图像可知，当角速度越来越大时，z的变化越来越明显。即上下两部分的向心力之差越来越大，导致z变化加快，与实际相符合。
  
 # [源代码](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/5.0/code)
 
