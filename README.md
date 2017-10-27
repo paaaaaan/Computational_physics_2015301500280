@@ -5,3 +5,7 @@ Study the shape of the chaotic attractor for different initial conditions. Show 
 ## 问题分析
 
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture8.png)
+
+## 数据图像
+
+通过改变不同的初始角度值，作出不同的图像如下图：
