@@ -27,5 +27,5 @@ Study the shape of the chaotic attractor for different initial conditions. Show 
 由上述图像可知，当改变初始角度值或者改变时间间距时，其角速度与速度关系图像形状基本保持不变。
 
 ## 源代码
-
+- [code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/exercise06)
 
