@@ -17,4 +17,4 @@
 - [x] [exercise05:calculate the effect of backspin on a fastball](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/5.0/README.md)
 
 
-- [x] [exercise06: ](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/6.0/README.md)
+- [x] [exercise06:study the shape of the chaotic attractor ](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/6.0/README.m
