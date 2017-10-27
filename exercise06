@@ -1,0 +1,113 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+plt.figure()
+#初始角度0.2
+list_ang=[0.2,]
+list_t=[0,]
+list_w=[0,]
+list_E=[0,]
+list_cang=[0,]
+q=0.5
+l=9.8
+g=9.8
+D=2/3
+dt=0.02
+Fd=1.2
+ang=0.2
+w=0
+t=0
+E=0
+cang=0
+while t<60:
+    print("%f,%f,%f" %(ang,t,E))
+    E=0.5*l*l*w*w+g*l*(1-math.cos(ang))
+    w=w+(-(g/l)*(math.sin(ang))-q*w+Fd*math.sin(D*t))*dt
+    cang=w*dt
+    ang=ang+w*dt
+    while (ang>math.pi):
+        ang=ang-2*math.pi
+    while (ang<(-1*math.pi)):
+        ang=ang+2*math.pi
+    t=t+dt
+    list_ang.append(ang)
+    list_t.append(t)  
+    list_w.append(w)
+    list_E.append(E)
+    list_cang.append(cang)
+plt.plot(list_ang, list_w)
+#初始角度0.4
+list_ang=[0.4,]
+list_t=[0,]
+list_w=[0,]
+list_E=[0,]
+list_cang=[0,]
+q=0.5
+l=9.8
+g=9.8
+D=2/3
+dt=0.02
+Fd=1.2
+ang=0.4
+w=0
+t=0
+E=0
+cang=0
+while t<60:
+    print("%f,%f,%f" %(ang,t,E))
+    E=0.5*l*l*w*w+g*l*(1-math.cos(ang))
+    w=w+(-(g/l)*(math.sin(ang))-q*w+Fd*math.sin(D*t))*dt
+    cang=w*dt
+    ang=ang+w*dt
+    while (ang>math.pi):
+        ang=ang-2*math.pi
+    while (ang<(-1*math.pi)):
+        ang=ang+2*math.pi
+    t=t+dt
+    list_ang.append(ang)
+    list_t.append(t)  
+    list_w.append(w)
+    list_E.append(E)
+    list_cang.append(cang)
+plt.plot(list_ang, list_w)
+#初始角度0.6
+list_ang=[0.6,]
+list_t=[0,]
+list_w=[0,]
+list_E=[0,]
+list_cang=[0,]
+q=0.5
+l=9.8
+g=9.8
+D=2/3
+dt=0.02
+Fd=1.2
+ang=0.6
+w=0
+t=0
+E=0
+cang=0
+while t<60:
+    print("%f,%f,%f" %(ang,t,E))
+    E=0.5*l*l*w*w+g*l*(1-math.cos(ang))
+    w=w+(-(g/l)*(math.sin(ang))-q*w+Fd*math.sin(D*t))*dt
+    cang=w*dt
+    ang=ang+w*dt
+    while (ang>math.pi):
+        ang=ang-2*math.pi
+    while (ang<(-1*math.pi)):
+        ang=ang+2*math.pi
+    t=t+dt
+    list_ang.append(ang)
+    list_t.append(t)  
+    list_w.append(w)
+    list_E.append(E)
+    list_cang.append(cang)
+plt.plot(list_ang, list_w)
+
+plt.title('plot of w vs. angle')
+plt.xlabel('angle(radians)')
+plt.ylabel('w(radians)')
+plt.xlim(-4,4)
+plt.ylim(-4,4)
+plt.show()
