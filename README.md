@@ -3,4 +3,8 @@
 ### Show that the Poincare section in Figure 3.17 are independent of the initial conditions.For example,compare the attractor found for x(0)=1,y(0)=1,z(0)=0 with that found for x(0)=0,y(0)=1,z(0)=1
 ## 问题分析
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture14.png)
-
+## 数据图像
+### 当r分别取值为5,10,25时，其对应的z-t图像如下：
+![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture15.png)
+### 当r分别取值为5,10,25时，其对应的z-x图像如下：
+![picture3](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture13.png)
