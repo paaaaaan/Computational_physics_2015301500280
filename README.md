@@ -20,3 +20,4 @@
 ## 结论
 ### 由上两图可看出，不同的初始条件下其截面图基本一致，庞加莱截面不依赖于初始条件。
 ## 源代码
+- [code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/code7.0)
