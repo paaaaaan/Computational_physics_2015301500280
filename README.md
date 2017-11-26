@@ -2,7 +2,7 @@
 # 题目3.
 
 ## 问题分析
-![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture14.png)
+![picture1]()
 ## 数据图像
 ## 结论
 ## 源代码
