@@ -20,3 +20,6 @@
 - [x] [exercise06:study the shape of the chaotic attractor ](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/6.0/README.md)
 
 - [x] [exercise07:the Poincare section are independent of the initial conditions](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/7.0/README.md)
+
+
+- [x] [exercise08:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/README.md)
