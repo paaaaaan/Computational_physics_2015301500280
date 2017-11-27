@@ -11,25 +11,30 @@ keys = [False, False, False, False]
 playerpos=[100,800]
 acc=[0,0]
 arrows=[]
-list_y=[100,700]
-y=100
-dt=1
-v=10
 badtimer=100
 badtimer1=0
 badguys=[[640,100]]
 healthvalue=100
+pygame.mixer.init()
 # 3 - Load images
 player = pygame.image.load(r"H:\1.png")
 arrow = pygame.image.load(r"H:\2.png")
-badguyimg1 = pygame.image.load(r"H:\3.jpg")
+grass = pygame.image.load(r"H:\5.png")
+badguyimg1 = pygame.image.load(r"H:\3.png")
+bomb = pygame.image.load(r"H:\6.png")
 badguyimg=badguyimg1
+# 3.1 - Load audio
+enemy = pygame.mixer.Sound(r"C:\Users\潘\Desktop\2.wav")
+shoot = pygame.mixer.Sound(r"C:\Users\潘\Desktop\1.wav")
+enemy.set_volume(0.05)
+shoot.set_volume(0.05)
  # 4 - keep looping through
 while 1:
     badtimer-=1
     # 5 - clear the screen before drawing it again
     screen.fill(0)
     # 6 - draw the screen elements
+    screen.blit(grass,(0,0))
     # 6.1 - Set player position and rotation
     position = pygame.mouse.get_pos()
     angle = math.atan2(position[1]-(playerpos[1]+32),position[0]-(playerpos[0]+26))
@@ -39,8 +44,8 @@ while 1:
     # 6.2 - Draw arrows
     for bullet in arrows:
         index=0
-        velx=math.cos(bullet[0])*6
-        vely=math.sin(bullet[0])*6
+        velx=math.cos(bullet[0])*20
+        vely=math.sin(bullet[0])*20
         bullet[1]+=velx
         bullet[2]+=vely
         if bullet[1]<-100 or bullet[1]>1000 or bullet[2]<-100 or bullet[2]>1000:
@@ -52,7 +57,7 @@ while 1:
  # 6.3 - Draw badgers
     if badtimer==0:
         badguys.append([1000, random.randint(50,430)])
-        badtimer=300-(badtimer1*2)
+        badtimer=200-(badtimer1*2)
         if badtimer1>=35:
             badtimer1=35
         else:
@@ -77,16 +82,12 @@ while 1:
         bullrect.left=bullet[1]
         bullrect.top=bullet[2]
         if badrect.colliderect(bullrect):
+            enemy.play()
+            screen.blit(bomb,(badrect.left,badrect.top))
             acc[0]+=1
-            badguys.pop(index)
+            badguys.pop(index1)
             arrows.pop(index1)
         index1+=1
-    # 6.4 - Draw clock
-    font = pygame.font.Font(None, 24)
-    survivedtext = font.render(str((90000-pygame.time.get_ticks())/60000)+":"+str((90000-pygame.time.get_ticks())/1000%60).zfill(2), True, (0,0,0))
-    textRect = survivedtext.get_rect()
-    textRect.topright=[635,5]
-    screen.blit(survivedtext, textRect)
     # 7 - update the screen
     pygame.display.flip()
     # 8 - loop through the events
@@ -115,15 +116,16 @@ while 1:
             elif event.key==pygame.K_d:
                    keys[3]=False
         if event.type==pygame.MOUSEBUTTONDOWN:
+            shoot.play()
             position=pygame.mouse.get_pos()
             acc[1]+=1
             arrows.append([math.atan2(position[1]-(playerpos1[1]+32),position[0]-(playerpos1[0]+26)),playerpos1[0]+32,playerpos1[1]+32])
     # 9 - Move player
     if keys[0]:
-        playerpos[1]-=1
+        playerpos[1]-=5
     elif keys[2]:
-        playerpos[1]+=1
+        playerpos[1]+=5
     if keys[1]:
-        playerpos[0]-=1
+        playerpos[0]-=5
     elif keys[3]:
-        playerpos[0]+=1
+        playerpos[0]+=5
