@@ -1,6 +1,6 @@
 #### 潘祚坚 2015301500280
-# 题目3.
-
+# 题目3.31
+Study teh behavior for other types of tables.One interesting possibility is a square table with a circular interier wall located either in the center.Another possibility is an elliptical table.
 ## 问题分析
 
 ## 数据图像
