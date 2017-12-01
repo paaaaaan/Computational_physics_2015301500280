@@ -3,8 +3,9 @@
 ## 题目
 ### Investigate the effect of Jupiter on Mars(考虑木星对火星轨道的影响)
 ## 分析
-![exercise](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/exercise.png)
+![exercise](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/analysis.png)
 ## 数据图像
+
 # 题目4.14的尝试
 ## 题目
 ### 通过编写程序模拟出太阳、地球、月亮三体的运动，并注意两点：1、月球绕地球和地球绕太阳时间尺度不同  2、设定月球初速度时需考虑地球的速度
