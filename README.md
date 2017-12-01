@@ -22,10 +22,10 @@
 - [x] [exercise07:the Poincare section are independent of the initial conditions](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/7.0/README.md)
 
 
-- [x] [exercise08:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/README.md)
+- [x] [exercise08:a billiard on different tables](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/README.md)
 
 
 - [x] [pygame：a small game--hit the dragon](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/9.0/README.md)
 
 
-- [x] [exercise09:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/9.0/README.md)
+- [x] [exercise09:the three body problem](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/README.md)
