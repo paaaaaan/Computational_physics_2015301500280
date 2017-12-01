@@ -15,6 +15,8 @@
 ![picture5](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/2.png)
 ## 结论
 ### 在木星的质量不断增大的过程中，先会导致火星轨迹出现轻微扰动，再火星逐渐脱离原轨迹，最后出现围绕木星旋转的现象。
+### 源代码
+![code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/code)
 # 题目4.14的尝试
 ## 题目
 ### 通过编写程序模拟出太阳、地球、月亮三体的运动，并注意两点：1、月球绕地球和地球绕太阳时间尺度不同  2、设定月球初速度时需考虑地球的速度
