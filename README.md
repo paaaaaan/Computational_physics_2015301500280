@@ -7,6 +7,7 @@
 ### 操作：可以通过w、a、s、d键控制大炮的位置，用鼠标调整射击角度，点击鼠标左键发射炮弹。翼龙从右侧边界随机位置飞出，发射炮弹即可击中翼龙。
 ## 游戏效果
 ## 戳下面这个链接，点击"download"或者"view raw"可下载试玩视频，视频不大，只有6.5M
+## ↓↓↓
 ## [试玩视频](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/2017.12.01-16.50.25.mp4)
 ### 下面是试玩视频前三十秒转换的gif
 ![游戏录屏](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif.gif)
