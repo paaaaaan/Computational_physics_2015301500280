@@ -30,17 +30,16 @@ shells=[]
 badtimer=100
 badtimer1=0
 dragons=[[640,100]]
-healthvalue=100
 pygame.mixer.init()
 cannon = pygame.image.load(r"H:\1.png")#大炮图片
 shell = pygame.image.load(r"H:\2.png")#炮弹图片
 background = pygame.image.load(r"H:\5.png")#背景图片
 dragonimg1 = pygame.image.load(r"H:\3.png")#翼龙图片
 bomb = pygame.image.load(r"H:\6.png")
-dragonimg=dragonimg1
+dragonimg=dragonimg1#重复翼龙图片
 enemy = pygame.mixer.Sound(r"C:\Users\潘\Desktop\pygame\2.wav")#击中音效
 shoot = pygame.mixer.Sound(r"C:\Users\潘\Desktop\pygame\1.wav")#炮弹发射声音
-enemy.set_volume(0.05)
+enemy.set_volume(0.05)#设置音量大小
 shoot.set_volume(0.05)
 while 1:
     badtimer-=1
@@ -77,16 +76,16 @@ while 1:
         dragon[0]-=5
         index+=1
     for dragon in dragons:
-        screen.blit(dragonimg, dragon)
-    badrect=pygame.Rect(dragonimg.get_rect())#设置龙所在的矩形区域
-    badrect.top=dragon[1]
-    badrect.left=dragon[0]
+        screen.blit(dragonimg, dragon)#显示翼龙
+    badrect=pygame.Rect(dragonimg.get_rect())#设置龙所在的矩形区域
+    badrect.top=dragon[1]#龙的顶部位置
+    badrect.left=dragon[0]#龙的左侧位置
     index1=0
     for bullet in shells:
         bullrect=pygame.Rect(shell.get_rect())#设置炮弹的矩形区域
-        bullrect.left=bullet[1]
-        bullrect.top=bullet[2]
-        if badrect.colliderect(bullrect):#如果炮弹击中了翼龙，即两者的矩形区域有交叉
+        bullrect.left=bullet[1]#炮弹的左侧位置
+        bullrect.top=bullet[2]#炮弹的顶部位置
+        if badrect.colliderect(bullrect):#如果炮弹击中了翼龙，即两者的矩形区域有交叉
             screen.blit(bomb,(badrect.left,badrect.top))#显示爆炸的图片
             enemy.play()#出现爆炸的音效
             dragons.pop(index1)#翼龙消失
