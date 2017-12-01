@@ -15,9 +15,7 @@
 ### （1）以前觉得做游戏时间很高端的事，但自己尝试过后感觉也并不是很难，虽然自己做的很low
 ### （2）自己编程能力不太够，出了好多次 BUG 但老是搞不清楚问题出在哪，有时候就是很简单的问题没看出来
 ## 游戏代码
-- [code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/pygame)
 ```python
-@requires_authorization
 import pygame
 from pygame.locals import *
 import math
