@@ -3,7 +3,7 @@
 ## 题目
 ### Investigate the effect of Jupiter on Mars(考虑木星对火星轨道的影响)
 ## 分析
-!(exercise)[https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/exercise.png]
+![exercise](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/exercise.png)
 ## 数据图像
 # 题目4.14的尝试
 ## 题目
