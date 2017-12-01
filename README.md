@@ -25,5 +25,7 @@
 - [x] [exercise08:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/README.md)
 
 
+- [x] [pygame：a small game--hit the dragon](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/9.0/README.md)
 
-- [x] [pygame](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/9.0/README.md)
+
+- [x] [exercise09:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/9.0/README.md)
