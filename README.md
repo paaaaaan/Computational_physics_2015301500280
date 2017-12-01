@@ -21,7 +21,7 @@
 
 - [x] [exercise07:the Poincare section are independent of the initial conditions](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/7.0/README.md)
 
-### 下面这几次作业（第八次、期中）抱歉交晚了，麻烦助教批阅一下，谢谢
+### 下面这两次作业（第八次、期中）抱歉交晚了，麻烦助教批阅一下，谢谢
 - [x] [exercise08:a billiard on different tables](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/README.md)
 
 
