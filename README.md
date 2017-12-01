@@ -5,7 +5,14 @@
 ## 分析
 ![exercise](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/analysis.png)
 ## 数据图像
-
+### 当木星质量为原重时，火星的轨迹为圆形：
+![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/3.png)
+### 当木星质量为100倍时，火星的轨迹开始出现混乱：
+![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/4.png)
+### 当木星质量为500倍时，火星的轨迹开始出现围绕木星的进动：
+![picture4](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/2.png)
+### 当木星质量为1500倍时，火星的轨迹基本上稳定于围绕木星的进动：
+![picture5](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/1.png)
 # 题目4.14的尝试
 ## 题目
 ### 通过编写程序模拟出太阳、地球、月亮三体的运动，并注意两点：1、月球绕地球和地球绕太阳时间尺度不同  2、设定月球初速度时需考虑地球的速度
