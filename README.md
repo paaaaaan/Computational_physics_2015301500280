@@ -10,9 +10,9 @@
 ### 当木星质量为100倍时，火星的轨迹开始出现混乱：
 ![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/4.png)
 ### 当木星质量为500倍时，火星的轨迹开始出现围绕木星旋转：
-![picture4](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/2.png)
-### 当木星质量为1500倍时，火星的轨迹继续出现围绕木星旋转：
-![picture5](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/1.png)
+![picture4](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/1.png)
+### 当木星质量为1500倍时，火星的轨迹基本保持围绕木星旋转：
+![picture5](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/10.0/2.png)
 ## 结论
 ### 在木星的质量不断增大的过程中，先会导致火星轨迹出现轻微扰动，再火星逐渐脱离原轨迹，最后出现围绕木星旋转的现象。
 # 题目4.14的尝试
