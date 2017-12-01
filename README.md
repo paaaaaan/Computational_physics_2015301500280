@@ -37,8 +37,8 @@ background = pygame.image.load(r"H:\5.png")#背景图片
 dragonimg1 = pygame.image.load(r"H:\3.png")#翼龙图片
 bomb = pygame.image.load(r"H:\6.png")
 dragonimg=dragonimg1#重复翼龙图片
-enemy = pygame.mixer.Sound(r"C:\Users\潘\Desktop\pygame\2.wav")#击中音效
-shoot = pygame.mixer.Sound(r"C:\Users\潘\Desktop\pygame\1.wav")#炮弹发射声音
+enemy = pygame.mixer.Sound(r"H:\2.wav")#击中音效
+shoot = pygame.mixer.Sound(r"H:\1.wav")#炮弹发射声音
 enemy.set_volume(0.05)#设置音量大小
 shoot.set_volume(0.05)
 while 1:
