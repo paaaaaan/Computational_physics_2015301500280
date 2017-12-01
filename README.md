@@ -12,7 +12,7 @@ Study teh behavior for other types of tables.One interesting possibility is a sq
 ![picture3](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/3.png)
 ### 当α值出现较小变化时，会引起图像的较大改变。
 ## 结论
-### 由上述图像可知，当桌面形状为椭圆时，参数改变小量，但是得到的图像会出现较大的变化
+### 由上述图像可知，当桌面形状为椭圆时，参数改变小量，但是得到的图像会出现较大的变化，出现了混沌现象
 ## 源代码
 ### （在处理球与不规则桌面的碰撞时，自己写的代码老是跑不出来正确图像，这里借鉴了王森同学的代码，非常感谢）
 - [code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/8.0/code)
