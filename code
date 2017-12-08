@@ -4,10 +4,7 @@ import matplotlib.cm as cm
 import matplotlib.pyplot as plt 
 from mpl_toolkits.mplot3d import Axes3D 
 from copy import deepcopy
-
-
 v = []
-
 for i in range(101):    
     row_i = []
     for j in range(101):
@@ -21,8 +18,7 @@ for i in range(101):
             voltage = 0
         row_i.append(voltage)
     v.append(row_i)
-
-    
+   
 def update_V(v):
 
     delta_V = 0
@@ -91,8 +87,6 @@ plt.ylabel('y(m)')
 
 fig = plt.figure()
 ax = Axes3D(fig)
-#ax = fig.add_subplot(1, 1, 1, projection='3d')
-#ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
 surf=ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm,linewidth=0, antialiased=False) 
 ax.set_xlabel('x(m)') 
 ax.set_ylabel('y(m)') 
