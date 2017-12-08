@@ -10,8 +10,12 @@
 ![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/2.png)
 ### 当两电容器相隔0.4m时，其对应的电势分布图：
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/4.png)
+### 对应的电场方向图如下：
+![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/6.png)
 ### 当两电容器相隔0.6m时，其对应的电势分布图：
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/5.png)
+### 对应的电场方向图如下：
+![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/7.png)
 ## 结论
 
 ## 源代码
