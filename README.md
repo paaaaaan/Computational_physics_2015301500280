@@ -16,8 +16,8 @@
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/5.png)
 ### 对应的电场方向图如下：
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/7.png)
-## 结论
 
 ## 源代码
+### 感谢吕蔚学长的代码！
 - [code](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/code)
 
