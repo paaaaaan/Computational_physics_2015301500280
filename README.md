@@ -1,9 +1,8 @@
 #### 潘祚坚 2015301500280
-# 题目
-
+# 题目5.1
+### Solve for the potential in the prism geometry in Figure 5.4
 ## 问题分析
 
-![picture1]()
 
 ## 数据图像
 
