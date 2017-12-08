@@ -1,62 +1,109 @@
-import matplotlib 
+from __future__ import division 
 import numpy as np 
+import matplotlib.cm as cm 
 import matplotlib.pyplot as plt 
-V0=[[0 for i in range(21)]for j in range(21)]
-for i in [6]:
-    for j in range(6,15):
-        V0[j][i]=1.0
-for i in [15]:
-    for j in range(6,15):
-        V0[j][i]=-1.0
-VV=[]
-VV.append(V0)
-s=0
-dx=0.1
-while 1:
-    VV.append(V0)
-    for i in range(1,len(V0)-1):
-        for j in range(1,len(V0[1])-1):
-            VV[s+1][i][j]=(VV[s][i+1][j]+VV[s][i-1][j]+VV[s][i][j+1]+VV[s][i][j-1])/4.0
-    for i in [6]:
-        for j in range(6,15):
-            VV[s+1][j][i]=1.0
-    for i in [15]:
-        for j in range(6,15):
-            VV[s+1][j][i]=-1.0
-    VV[s]=np.array(VV[s])
-    VV[s+1]=np.array(VV[s+1])
-    dVV=VV[s+1]-VV[s]
-    dV=0
-    for i in range(1,len(V0)-1):
-        for j in range(1,len(V0[1])-1):
-            dV=dV+abs(dVV[i][j])
-    s=s+1
-    if dV<0.0001 and s>10:
-        break
-print (s)
-V=array(VV[-1])
-Ex=array(V0)
-Ey=array(V0)
-for j in range(1,len(V0)-1):
-    for i in range(1,len(V0[1])-1):
-        Ex[j][i]=-(V[j][i+1]-V[j][i-1])/(2*dx)
-        Ey[j][i]=-(V[j+1][i]-V[j-1][i])/(2*dx)
-figure(figsize=[8,8])
-x=np.arange(-1.0,1.01,dx)
-y=np.arange(-1.0,1.01,dx)
-X,Y=np.meshgrid(x,y)
-CS = contour(X,Y,V,15)
-clabel(CS, inline=1, fontsize=10)
-xlim(-1,1)
-xlabel('x')
-ylim(-1,1)
-ylabel('y')
-title('contours of electric potential')
-figure(figsize=[8,8])
-Q=quiver(X,Y,Ex,Ey,scale=100)
-xlim(-1,1)
-xlabel('x')
-ylim(-1,1)
-ylabel('y')
-title('electric field')
-show()
+from mpl_toolkits.mplot3d import Axes3D 
+from copy import deepcopy
+
+
+v = []
+
+for i in range(101):    
+    row_i = []
+    for j in range(101):
+        if i == 0 or i == 100 or j == 0 or j == 100:
+            voltage = 0
+        elif 20<=i<=80 and j == 20:
+            voltage = 1
+        elif 20<=i<=80 and j == 80:
+            voltage = -1
+        else:
+            voltage = 0
+        row_i.append(voltage)
+    v.append(row_i)
+
+    
+def update_V(v):
+
+    delta_V = 0
+
+    for i in range(101):    
+        for j in range(101):
+            if i == 0 or i == 100 or j == 0 or j == 100:
+                pass
+            elif 20<=i<=80 and j == 20:
+                pass
+            elif 20<=i<=80 and j == 80:
+                pass
+            else:
+                voltage_new = (v[i+1][j]+v[i-1][j]+v[i][j+1]+v[i][j-1])/4
+                voltage_old = v[i][j]
+                delta_V += abs(voltage_new - voltage_old)
+                v[i][j] = voltage_new
+
+    return v, delta_V
+    
+def Laplace_calculate(v):
+    
+    epsilon = 10**(-5)*100**2
+    delta_V = 0
+    N_iter = 0
+
+    while delta_V >= epsilon or N_iter <= 10:
+        v1, delta_V = update_V(v)
+        v2, delta_V = update_V(v1)
+        v = v2
+        N_iter += 1
+
+    return v2
+
+
+x = np.linspace(0,100,101)
+y = np.linspace(0,100,101)
+X, Y = np.meshgrid(x, y)
+Z = Laplace_calculate(v)
+Ex = deepcopy(Z)
+Ey = deepcopy(Z)
+E = deepcopy(Z)
+
+for i in range(101):
+    for j in range(101):
+        if i == 0 or i == 100 or j == 0 or j == 100:
+            Ex[i][j] = 0
+            Ey[i][j] = 0
+        else:
+            Ex_value = -(Z[i+1][j] - Z[i][j])/2
+            Ey_value = -(Z[i][j+1] - Z[i][j])/2
+            Ex[i][j] = Ex_value
+            Ey[i][j] = Ey_value
+
+for i in range(101):
+    for j in range(101):
+        E_value = np.sqrt(Ex[i][j]**2 + Ey[i][j]**2)
+        E[i][j] = E_value
+   
+plt.figure()
+CS = plt.contour(X,Y,Z,32, alpha=.75)
+plt.clabel(CS, inline=1, fontsize=8)
+plt.title('Electric potential near two metal plates')
+plt.xlabel('x(m)')
+plt.ylabel('y(m)')
+
+fig = plt.figure()
+ax = Axes3D(fig)
+#ax = fig.add_subplot(1, 1, 1, projection='3d')
+#ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
+surf=ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap=cm.coolwarm,linewidth=0, antialiased=False) 
+ax.set_xlabel('x(m)') 
+ax.set_ylabel('y(m)') 
+ax.set_zlabel('voltage(V)') 
+ax.set_title('Electric potential near two metal plates') 
+fig.colorbar(surf,shrink=0.5,aspect=5)
+         
+fig0, ax0 = plt.subplots()
+strm = ax0.streamplot(X, Y, np.array(Ey), np.array(Ex), linewidth=1)
+ax0.set_xlabel('x(m)')
+ax0.set_ylabel('y(m)')
+ax0.set_xlim(0,100)
+ax0.set_title('Electric field near two metal plates')
+plt.show()
