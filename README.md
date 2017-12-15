@@ -5,9 +5,13 @@ An important feature of a linear equation is that the sum of two solutions is al
 # 问题分析
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/analysis.png)
 # 数据图像
-## 根据上述关系式，可作出两个不同的波在传播过程中相遇造成的相长或相抵：
-![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/1.gif)
-# 结论
-在各波包相遇时振动叠加，而在分离后，各自以原来的形态传播，波包互相不发生影响（波动方程的线性）。
 
-## [**源代码**](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/code)
+## 根据上述关系式，可作出两个不同的波在传播过程中相遇造成的相长或相抵：
+
+![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/1.gif)
+
+# 结论
+
+## 在各波包相遇时振动叠加，而在分离后，各自以原来的形态传播，波包互相不发生影响（波动方程的线性）。
+
+### [**源代码**](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/code)
