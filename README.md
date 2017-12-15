@@ -6,11 +6,11 @@ An important feature of a linear equation is that the sum of two solutions is al
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/analysis.png)
 # 数据图像
 
-## 根据上述关系式，可作出两个不同的波在传播过程中相遇造成的相长或相抵：
+## 根据上述关系式，可作出两个不同的波在传播过程中相遇造成的相长或相抵，出现一个波包：
 
 ![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/1.gif)
 
-
+## 四个不同的波在传播过程中相遇造成的相长或相抵，出现两个波包：
 ![picture3](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/2.gif)
 # 结论
 
