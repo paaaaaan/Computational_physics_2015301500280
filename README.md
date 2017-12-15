@@ -16,7 +16,7 @@ An important feature of a linear equation is that the sum of two solutions is al
 
 ### 在各波包相遇时振动叠加，而在分离后，各自以原来的形态传播，波包互相不发生影响（波动方程的线性）。
 
-### 源代码
+### 源代码（两个图画到心累，感谢上官学姐部分代码）
 ```python
 #第一幅图
 import numpy as np
