@@ -10,6 +10,8 @@ An important feature of a linear equation is that the sum of two solutions is al
 
 ![picture2](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/1.gif)
 
+
+![picture3](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/2.gif)
 # 结论
 
 ## 在各波包相遇时振动叠加，而在分离后，各自以原来的形态传播，波包互相不发生影响（波动方程的线性）。
