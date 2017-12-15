@@ -34,4 +34,4 @@
 - [x] [exercise10:potentials and fields](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/11.0/README.md)
 
 
-- [x] [exercise11:](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/README.md)
+- [x] [exercise11:waves on the string](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/README.md)
