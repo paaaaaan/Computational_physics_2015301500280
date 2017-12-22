@@ -1,5 +1,7 @@
-## 移动图片：
-![gif]()
+### 移动图片：
+![gif](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif.gif)
+
+### 代码如下：
 ```python
 import pygame
 from pygame.locals import *
