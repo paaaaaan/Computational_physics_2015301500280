@@ -1,3 +1,6 @@
+## 移动图片：
+![gif]()
+```python
 import pygame
 from pygame.locals import *
 import sys
@@ -20,3 +23,4 @@ while 1:
   screen.fill(black)
   screen.blit(ball, ballrect)
   pygame.display.flip()
+```
