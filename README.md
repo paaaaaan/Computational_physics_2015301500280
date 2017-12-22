@@ -2,7 +2,7 @@
 ------
 
 
-- [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/temp.py)&[picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
+- [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
 
 
 - [x] [exercise02: move the picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/2.0/README.md)&[GIF](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif.gif)
