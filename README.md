@@ -5,7 +5,7 @@
 - [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
 
 
-- [x] [exercise02: move the picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/2.0/README.md)&[GIF](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif.gif)
+- [x] [exercise02: move the picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/2.0/README.md)&[GIF](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif%20(1).gif)
 
 
 - [x] [exercise03: compute the solution to the equation](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/3.0/README.md)
