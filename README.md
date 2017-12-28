@@ -1,5 +1,5 @@
 ### 移动图片：
-![gif](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif.gif)
+![gif](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/gif(1).gif)
 
 ### 代码如下：
 ```python
