@@ -16,6 +16,45 @@
 ## 结论
 ### 由三组不同角速度情况下，y、z随x变化图像可知，当角速度越来越大时，z的变化越来越明显。即上下两部分的向心力之差越来越大，导致z变化加快，与实际相符合。
  
-## [源代码](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/5.0/code)
-
+## 源代码
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+plt.figure()
+list_xcoo=[0,]
+list_ycoo=[0,]
+list_zcoo=[0,]
+B=0.00004
+dt=0.01
+v=31.2928
+x=0
+y=3.5
+z=0
+vx=v
+vy=0
+vz=0
+w=200
+while x<50: 
+    B=(math.exp(-y*0.1))*B       
+    x+=vx*dt
+    y+=vy*dt
+    z+=vz*dt
+    vx=vx-B*v*vx*dt
+    vy=vy-9.8*dt
+    vz=vz+0.00041*vx*w*dt
+    v=math.sqrt(vx*vx+vy*vy+vz*vz)
+    print("%f,%f,%f,%f,%f,%f" %(x,y,z,vx,vy,vz))  
+    list_xcoo.append(x)
+    list_ycoo.append(y)
+    list_zcoo.append(z)
+plt.plot(list_xcoo, list_ycoo)
+plt.plot(list_xcoo, list_zcoo)
+plt.title('plot of y/z vs. x')
+plt.xlabel('x(m)')
+plt.ylabel('y or z(m)')
+plt.xlim(0.0,60)
+plt.ylim(-4.0,4.0)
+plt.show()
+```
 
