@@ -5,6 +5,9 @@
 
 ### 0-10s内速度图像：
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/exercise03.picture1.png)
+
+### 结论：加速度恒定时，用Euler法求出的速度值即为精确值。
+
 ### 第一题代码
 ```python
 import numpy as np
@@ -33,10 +36,11 @@ plot()
 
 ### 第三题：
 ### 根据Euler法求出（0s,20s）时间内的每隔0.1秒对应的速度，并作出相应的速度图像，由图像可知当时间t趋近10s时，速度v无限接近于10m/s,并当t=10s时，速度v=10m/s。当t>10s时，速度v保持10m/s不变，即为恒定值。
-### 其物理意义即为当速度v=10m/s时，由加速度a=0，此后速度不发生变化，即始终保持为10m/s。
 
 ### 0-10s内速度图像：
 ![picture1](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/exercise03.picture2.png)
+
+### 结论：当速度v=10m/s时，受力平衡，加速度a=0，此后速度不发生变化，即始终保持为10m/s。
 
 ### 第三题代码
 ```python
