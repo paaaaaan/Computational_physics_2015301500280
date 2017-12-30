@@ -1,6 +1,6 @@
 # Homework List
 
-#### &emsp &emsp 潘祚坚  2015301500280
+#### &emsp&emsp潘祚坚  2015301500280
 
 - [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
 
