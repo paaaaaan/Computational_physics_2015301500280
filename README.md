@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 import math
 plt.figure()
 list_xcoo=[0,]
-list_ycoo=[0,]
+list_ycoo=[3.5,]
 list_zcoo=[0,]
 B=0.00004
 dt=0.01
@@ -35,7 +35,7 @@ z=0
 vx=v
 vy=0
 vz=0
-w=200
+w=150
 while x<50: 
     B=(math.exp(-y*0.1))*B       
     x+=vx*dt
@@ -49,8 +49,10 @@ while x<50:
     list_xcoo.append(x)
     list_ycoo.append(y)
     list_zcoo.append(z)
-plt.plot(list_xcoo, list_ycoo)
-plt.plot(list_xcoo, list_zcoo)
+plt.plot(list_xcoo,list_ycoo, linewidth = '4',label="vertical (y)",color="black")
+plt.plot(list_xcoo,list_zcoo, linewidth = '4',label="horizontal (z)",color="red")
+plt.legend(loc='lower right')
+plt.hlines(z, 0,50, colors = "c", linestyles = "dashed")
 plt.title('plot of y/z vs. x')
 plt.xlabel('x(m)')
 plt.ylabel('y or z(m)')
