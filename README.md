@@ -1,5 +1,5 @@
-# Homework List   
-#### &nbsp;&nbsp;&nbsp;潘祚坚  2015301500280
+# Homework List   
+-------
 
 - [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
 
