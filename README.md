@@ -13,8 +13,9 @@
 ![picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture6.png)
 ### 当角速度为2000rpm时，y、z随x变化曲线；
 ![picture](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture7.png)
+### 由三个角速度不同的坐标图对比可知，当角速度越来越大时，在相同的x变化量下，z的变化越来越明显（由其截距增大可知）。
 ## 结论
-### 由三组不同角速度对应的速度曲线上z的截距变化可知，当角速度越来越大时，z的变化越来越明显。即上下两部分的向心力之差越来越大，导致z变化加快，与实际相符合。
+### 当角速度越来越大时，上下两部分的向心力之差越来越大，导致z变化加快，与实际相符合。
  
 ## 源代码
 ```python
