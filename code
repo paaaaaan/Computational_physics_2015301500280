@@ -1,0 +1,58 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+plt.figure()
+list_fi=[0,]
+list_x=[-1,]
+fi=0
+dx=0.01
+x=-1
+while x<1:
+    fi=math.sin(x*(math.pi))
+    x=x+dx
+    list_fi.append(fi)
+    list_x.append(x)
+plt.plot(list_x,list_fi, linewidth = '2',label="n=1",color="red")
+plt.title('Square Well-loweat even parity levels')
+plt.xlabel('x')
+plt.ylabel('$\psi$')
+plt.xlim(-1,1)
+plt.ylim(-1,1)
+
+
+list_fi=[0,]
+list_x=[-1,]
+fi=0
+dx=0.01
+x=-1
+while x<1:
+    fi=math.sin(x*(math.pi)*2)
+    x=x+dx
+    list_fi.append(fi)
+    list_x.append(x)
+plt.plot(list_x,list_fi, linewidth = '2',label="n=2",color="black")
+plt.title('Square Well-loweat even parity levels')
+plt.xlabel('x')
+plt.ylabel('$\psi$')
+plt.xlim(-1,1)
+plt.ylim(-1,1)
+
+
+
+list_fi=[0,]
+list_x=[-1,]
+fi=0
+dx=0.01
+x=-1
+while x<1:
+    fi=math.sin(x*(math.pi)*3)
+    x=x+dx
+    list_fi.append(fi)
+    list_x.append(x)
+plt.plot(list_x,list_fi, linewidth = '2',label="n=3",color="blue")
+plt.title('Square Well-lowest even parity levels')
+plt.xlabel('x')
+plt.ylabel('$\psi$')
+plt.xlim(-1,1)
+plt.ylim(-1,1)
+plt.legend(loc='upper right')
