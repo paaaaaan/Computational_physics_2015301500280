@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-
-
 class Schrodinger(object):
     def __init__(self, dx=0.01,N=130):
         self.xl=np.zeros(N)
@@ -24,36 +22,30 @@ class Schrodinger(object):
         self.xr[-1]=0.0001*self.dx        
         while abs(self.lastc) > 0.0000001:
             for i in range(self.xml+20)[1:]:
-                self.xl[i+1]=2*self.xl[i]-self.xl[i-1]-2*(self.e-self.v[i])*self.dx**2*self.xl[i]
-            
-            for i in np.arange(2, abs(self.xmr)+20, 1):
-             
+                self.xl[i+1]=2*self.xl[i]-self.xl[i-1]-2*(self.e-self.v[i])*self.dx**2*self.xl[i]            
+            for i in np.arange(2, abs(self.xmr)+20, 1):            
                 self.xr[-(i+1)]=2*self.xr[-i]-self.xr[1-i]-2*(self.e-self.v[-i])*self.dx**2*self.xr[-i]             
             self.xr=self.xr/self.xr[self.xmr]
             self.xl=self.xl/self.xl[self.xml]
             dfl=self.xl[self.xml+1]-self.xl[self.xml-1]
             dfr=self.xr[self.xmr+1]-self.xr[self.xmr-1]
-            print (dfl, dfr)
-  
-            if self.lastc*(dfl-dfr) < 0:
+            print (dfl, dfr)  
+            if self.lastc*(dfl-dfr)<0:
                 self.de=-self.de/2
             self.e=self.e+self.de
             print (self.e)
             self.lastc=dfl-dfr
-
-x=np.linspace(0.5, 5,450)
+x=np.linspace(0.5, 5,500)
 ljv=40*((1.0/x)**12-(1.0/x)**6)
 x_match=np.where(ljv==min(ljv))[0][0]
-
 plt.plot(x, ljv, '--')
 plt.ylim(-10, 10)
-a=Schrodinger(dx=0.01, N=450)
+a=Schrodinger(dx=0.01, N=500)
 a.matching_cal(ljv, x_match, e=1, de=0.5)
-
 plt.plot(x[:a.xml+20], a.xl[:a.xml+20]*5,color='red',linewidth=3.0)
 plt.plot(x[a.xmr-20:], a.xr[a.xmr-20:]*5,'--',color='black',linewidth=2.0)
-
 plt.xlabel("x")
 plt.ylabel(r"$\Psi$")
 plt.title("Lennard–Jones potential")
 plt.legend()
+
