@@ -37,7 +37,7 @@
 - [x] [exercise11: waves on the string](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/12.0/README.md)
 
 
-- [x] [Final: Quantuan Mechanics](https://www.zybuluo.com/pannnnn/note/1001393)
+- [x] [Final: Quantum Mechanics](https://www.zybuluo.com/pannnnn/note/1001393)
 
 
  #### 2018 新年快乐！
