@@ -1,4 +1,5 @@
 # Homework List   
+`潘祚坚`  `学号：2015301500280`  `班级：彭桓武班`
 -------
 
 - [x] [exercise01: write down your name](https://github.com/paaaaaan/Computational_physics_2015301500280/blob/files/picture.png)
